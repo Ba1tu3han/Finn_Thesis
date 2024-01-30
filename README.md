@@ -17,7 +17,7 @@ Vitis HLS: 2022.1
 
 # Hardware
 
-Pynq-Z2 (Version:TBD)
+Xilinx Pynq-Z2 (Version:TBD)
 
 
 # Source
