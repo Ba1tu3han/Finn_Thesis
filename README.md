@@ -5,10 +5,15 @@ FINN is an experimental framework from Xilinx Research Labs to explore deep neur
 # Version
 
 FINN: 0.9
+
 Ubuntu: 20.04
+
 Docker: 25.0.1
+
 Vivado: 2022.1
+
 Vitis HLS: 2022.1
+
 
 # Hardware
 
