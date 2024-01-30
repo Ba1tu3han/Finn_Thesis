@@ -14,6 +14,8 @@ Vivado: 2022.1
 
 Vitis HLS: 2022.1
 
+Python: 3.11.5
+
 
 # Hardware
 
