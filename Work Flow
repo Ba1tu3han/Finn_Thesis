@@ -1,0 +1,68 @@
+Güncel Akış 
+
+ 
+
+1.10.2023 
+
+Ortam: 
+
+    Ubuntu 20.04 
+
+    Docker 
+
+    Vivado 2022.1 ve Vitis HLS (“ ~/Xilinx ” konumuna kurulu) 
+
+    git clone -b dev https://github.com/Xilinx/finn/ (“ ~/Xilinx ” konumuna kurulu) 
+
+    GPU kullanmak için “NVIDIA Container Toolkit” kuruldu. Daha sonra Jupyter Notebook’ta GPU (CUDA) kullanılabilindi. 
+
+    https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html 
+
+ 
+
+ 
+Çalıştırma: 
+
+    export FINN_XILINX_PATH=~/Xilinx 
+
+    export FINN_XILINX_VERSION=2022.1 
+
+    export VIVADO_PATH=~/Xilinx/Vivado/2022.1 
+
+    source ~/Xilinx/Vivado/2022.1/settings64.sh 
+
+    export HLS_PATH=~/Xilinx/Vitis_HLS/2022.1 
+
+    export PYNQ_BOARD="Pynq-Z2" 
+
+    ./run-docker.sh quicktest 
+
+    bash ./run-docker.sh notebook 
+
+    Jupyter Notebook bağlantısını git (http://127.0.0.1:8888/tree) 
+
+    Xilinx/finn-dev/finn/src/finn/qnn-data/build_dataflow/build.py dosyasındaki geliştirme kartı veya FPGA belirtilir.  
+
+    platform_name = "Pynq-Z2" 
+
+    Board = "Pynq-Z2", / pynq_board = “Pynq-Z2” / test_pynq_board = "Pynq-Z2" 
+
+    model_name = "tfc_w1a1" 
+
+    model_file = "model.onnx" 
+
+    Pynq-Z2'ye çıktı deploy zip dosyasını kopyalayıp bir python kodunda aşağıdaki komutlar çalıştırılır. 
+
+    !unzip deploy-on-pynq-tfc.zip -d finn-tfc-demo 
+
+    cd finn-tfc-demo 
+
+    !sudo python3 -m pip install bitstring 
+
+    !sudo python3 driver.py --exec_mode=execute --batchsize=1 --bitfile=resizer.bit --inputfile=input.npy 
+
+    !sudo pip3 install git+https://github.com/fbcotter/dataset_loading.git@0.0.4#egg=dataset_loading 
+
+    !sudo python3 validate.py --dataset mnist --batchsize 1000 
+
+    !sudo python3 driver.py --exec_mode=throughput_test --batchsize=1000 --bitfile=resizer.bit 
