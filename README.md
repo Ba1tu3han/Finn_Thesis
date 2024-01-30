@@ -5,7 +5,7 @@ FINN is an experimental framework from Xilinx Research Labs to explore deep neur
 FINN runs in Docker container. (bash ./run-docker.sh notebook)
 
 
-# Version
+# Software Version
 
 FINN: 0.9 (tag: dev_latest)
 
