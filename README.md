@@ -19,7 +19,7 @@ Ubuntu: 20.04
 
 Python: 3.11.5
 
-OPSET: 11
+OPSET: TBD
 
 
 # Hardware
