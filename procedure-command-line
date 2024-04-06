@@ -1,14 +1,21 @@
- # Source:  https://github.com/Xilinx/finn/blob/e3087ad9fbabcc35f21164d415ababec4f462e9f/docs/finn/command_line.rst#L40
- 
-git pull    
+# Source:  https://github.com/Xilinx/finn/blob/e3087ad9fbabcc35f21164d415ababec4f462e9f/docs/finn/command_line.rst#L40
+    
 export FINN_XILINX_PATH=~/Xilinx 
 export FINN_XILINX_VERSION=2022.1
 export VIVADO_PATH=~/Xilinx/Vivado/2022.1
 source ~/Xilinx/Vivado/2022.1/settings64.sh
 export HLS_PATH=~/Xilinx/Vitis_HLS/2022.1 
 export PYNQ_BOARD="Pynq-Z2"
+export FINN_ROOT=~/Xilinx/finn-0v10/finn
 git describe --tags 
   
-./run-docker.sh build_dataflow home/Xilinx/finn-0v10/dataflow_build_dir
-    
-    
+./run-docker.sh build_dataflow ~/Xilinx/finn-0v10/dataflow_build_dir  
+
+
+# Examine the Stitched IP
+# cd ${FINN_ROOT}/tutorials/fpga_flow/output_tfc_w0a1_fpga/stitched_ip  
+# vivado finn_vivado_stitch_proj.xpr
+
+# Simulating the Stitched IP with a Verilog Test Bench
+# cd ${FINN_ROOT}/tutorials/fpga_flow/output_tfc_w0a1_fpga/sim
+# vivado -mode gui -source make_sim_proj.tcl

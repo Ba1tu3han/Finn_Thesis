@@ -4,7 +4,10 @@ export VIVADO_PATH=~/Xilinx/Vivado/2022.1
 source ~/Xilinx/Vivado/2022.1/settings64.sh
 export HLS_PATH=~/Xilinx/Vitis_HLS/2022.1 
 export PYNQ_BOARD="Pynq-Z2"
+export FINN_ROOT=~/Xilinx/finn-0v10/finn
+git describe --tags 
+  
+./run-docker.sh quicktest
 
-git describe --tags
- 
-bash ./run-docker.sh notebook    
+
+
