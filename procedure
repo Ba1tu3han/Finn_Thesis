@@ -1,12 +1,11 @@
-# USAGE: "bash procedure" in FINN Docker
-
-git pull
-export FINN_XILINX_PATH=~/Xilinx
-export FINN_XILINX_VERSION=2022.1
-export VIVADO_PATH=~/Xilinx/Vivado/2022.1
-source ~/Xilinx/Vivado/2022.1/settings64.sh
-export HLS_PATH=~/Xilinx/Vitis_HLS/2022.1
-export PYNQ_BOARD="Pynq-Z2"
-bash ./run-docker.sh notebook
+    git pull    
+    export FINN_XILINX_PATH=~/Xilinx 
+    export FINN_XILINX_VERSION=2022.1
+    export VIVADO_PATH=~/Xilinx/Vivado/2022.1
+    source ~/Xilinx/Vivado/2022.1/settings64.sh
+    export HLS_PATH=~/Xilinx/Vitis_HLS/2022.1 
+    export PYNQ_BOARD="Pynq-Z2"
+    git describe --tags 
+    bash ./run-docker.sh notebook 
     
     

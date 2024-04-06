@@ -7,7 +7,7 @@ FINN runs in a Docker container. (bash ./run-docker.sh notebook)
 
 # Software Version
 
-FINN: 0.9 (tag: dev_latest)
+FINN: 0.10
 
 Docker: 25.0.1
 
@@ -18,9 +18,6 @@ Vitis HLS: 2022.1
 Ubuntu: 20.04
 
 Python: 3.11.5
-
-OPSET: TBD
-
 
 # Hardware
 
