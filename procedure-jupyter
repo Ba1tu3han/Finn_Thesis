@@ -1,6 +1,4 @@
-    #git clone https://github.com/Xilinx/finn.git
-
-    git pull
+    git pull    
     export FINN_XILINX_PATH=~/Xilinx 
     export FINN_XILINX_VERSION=2022.1
     export VIVADO_PATH=~/Xilinx/Vivado/2022.1

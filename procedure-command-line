@@ -1,0 +1,14 @@
+ # Source:  https://github.com/Xilinx/finn/blob/e3087ad9fbabcc35f21164d415ababec4f462e9f/docs/finn/command_line.rst#L40
+ 
+git pull    
+export FINN_XILINX_PATH=~/Xilinx 
+export FINN_XILINX_VERSION=2022.1
+export VIVADO_PATH=~/Xilinx/Vivado/2022.1
+source ~/Xilinx/Vivado/2022.1/settings64.sh
+export HLS_PATH=~/Xilinx/Vitis_HLS/2022.1 
+export PYNQ_BOARD="Pynq-Z2"
+git describe --tags 
+  
+./run-docker.sh build_dataflow home/Xilinx/finn-0v10/dataflow_build_dir
+    
+    
