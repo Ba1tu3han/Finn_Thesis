@@ -30,7 +30,7 @@
     "PE": 1
   },
   "ConvolutionInputGenerator_rtl_2": {
-    "SIMD": 1,
+    "SIMD": 2,
     "parallel_window": 0,
     "ram_style": "distributed"
   },
@@ -72,8 +72,8 @@
     "runtime_writeable_weights": 0
   },
   "MVAU_hls_5": {
-    "PE": 1,
-    "SIMD": 12,
+    "PE": 2,
+    "SIMD": 4,
     "ram_style": "auto",
     "resType": "auto",
     "mem_mode": "internal_decoupled",
