@@ -21,7 +21,7 @@ Python: 3.11.5
 
 # Hardware
 
-Xilinx Pynq-Z2 (Version:TBD)
+Xilinx Pynq-Z2 (Version:2.7)
 
 
 # Source
