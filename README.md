@@ -32,6 +32,6 @@ https://finn.readthedocs.io/en/latest/
 
 # Master Thesis
 
-For more detail, please check the Brevitas sections of the thesis in the link below.
+For more detail, please check the FINN, and Model Training  sections of the thesis in the link below.
 
 https://tez.yok.gov.tr/UlusalTezMerkezi/TezGoster?key=E_eEUHQic_C-LvhxNQn1W0hnFEbNK8bSxQeObEvnsyE7qqMk72nSpDIRccrqG9v7
